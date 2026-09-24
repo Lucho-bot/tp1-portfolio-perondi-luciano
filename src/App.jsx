@@ -1,11 +1,21 @@
 import { useState } from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import About from './components/About'
+import Footer from './components/Footer'
 import './App.css'
 
-function App() {
-  
+const App = () => {
+  const nombre = "Luciano Perondi"
+  const profesion = "Estudiante de programacion"
+  const email = "lucianoperondi90@gmail.com"
+
   return (
     <div>    
-      <h1>Portfolio e informacion profesional de Luciano Perondi</h1>      
+      <Header nombre={nombre} profesion={profesion}/>
+      <Hero/>
+      <About/>
+      <Footer nombre={nombre} email={email}/>      
     </div>
   )
 }
