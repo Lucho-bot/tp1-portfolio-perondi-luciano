@@ -5,6 +5,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import './App.css'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 const App = () => {
   const nombre = "Luciano Perondi"
@@ -17,6 +18,7 @@ const App = () => {
       <Hero/>
       <About/>
       <Skills/>
+      <Projects/>
       <Footer nombre={nombre} email={email}/>      
     </div>
   )
