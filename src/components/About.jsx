@@ -2,7 +2,7 @@
 const About = () => {
 
     return (
-        <section>
+        <section style={{ backgroundColor: "#5DADE2"}}>
             <h2>Un poco sobre mi:</h2>
             <p>Serie de datos personales no tan reveladores. Tener en cuenta la parte de "ver mas"</p>
         </section>

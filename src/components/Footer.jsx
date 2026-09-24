@@ -2,7 +2,7 @@
 const Footer = ({nombre,email}) => {
 
     return (
-        <footer>
+        <footer style={{ backgroundColor: "#ADD8E6" }}>
             <p>© 2026 {nombre}</p>
             <h3>Si me queres contactar:</h3>
             <p>
