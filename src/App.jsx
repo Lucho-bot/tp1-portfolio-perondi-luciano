@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Footer from './components/Footer'
 import './App.css'
+import Skills from './components/Skills'
 
 const App = () => {
   const nombre = "Luciano Perondi"
@@ -15,6 +16,7 @@ const App = () => {
       <Header nombre={nombre} profesion={profesion}/>
       <Hero/>
       <About/>
+      <Skills/>
       <Footer nombre={nombre} email={email}/>      
     </div>
   )
