@@ -5,7 +5,7 @@ const ProjectCard = ({titulo, descripcion, tecnologias}) => {
         <article>
             <h3>{titulo}</h3>
             <p>{descripcion}</p>
-            <p>Tecnologias utilizadas: {tecnologias}</p>
+            <p><strong>Tecnologias utilizadas: </strong>{tecnologias}</p>
         </article>
     )
 }
