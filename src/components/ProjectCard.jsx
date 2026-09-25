@@ -1,12 +1,18 @@
 
-const ProjectCard = ({titulo, descripcion, tecnologias}) => {
+const ProjectCard = ({ titulo, descripcion, tecnologias }) => {
 
     return (
-        <article>
-            <h3>{titulo}</h3>
-            <p>{descripcion}</p>
-            <p><strong>Tecnologias utilizadas: </strong>{tecnologias}</p>
-        </article>
+        <div className="col-md-6">
+            <article className="card h-100 shadow-sm proyecto-card">
+                <div className="card-body">
+                    <h3 className="card-title h5">{titulo}</h3>
+                    <p className="card-text">{descripcion}</p>
+                    <p className="card-text">
+                        <small className="text-muted">Tecnologías: {tecnologias}</small>
+                    </p>
+                </div>
+            </article>
+        </div>
     )
 }
 

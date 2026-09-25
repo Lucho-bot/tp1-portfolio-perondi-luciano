@@ -30,16 +30,18 @@ const Projects = () => {
     ]
 
     return (
-        <section>
-            <h2>Proyectos</h2>
-            {proyectos.map((proyecto) => (
-                <ProjectCard 
-                    key= {proyecto.id}
-                    titulo= {proyecto.titulo}
-                    descripcion= {proyecto.descripcion}
-                    tecnologias= {proyecto.tecnologias}
-                />
-            ))}
+        <section className="py-4">
+            <h2 className="mb-3">Proyectos</h2>
+            <div className="row g-4">
+                {proyectos.map((proyecto) => (
+                    <ProjectCard 
+                        key= {proyecto.id}
+                        titulo= {proyecto.titulo}
+                        descripcion= {proyecto.descripcion}
+                        tecnologias= {proyecto.tecnologias}
+                    />
+                ))}
+            </div>
         </section>
     )
 }

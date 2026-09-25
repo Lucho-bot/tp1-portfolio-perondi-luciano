@@ -1,0 +1,9 @@
+.proyecto-card {
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.proyecto-card:hover {
+  background-color: #e0f7fa;
+  border-color: #20c997;
+  transform: translateY(-5px);
+}

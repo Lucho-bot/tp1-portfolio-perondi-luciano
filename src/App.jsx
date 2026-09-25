@@ -13,7 +13,7 @@ const App = () => {
   const email = "lucianoperondi90@gmail.com"
 
   return (
-    <div>    
+    <div className="container">    
       <Header nombre={nombre} profesion={profesion}/>
       <Hero/>
       <About/>
