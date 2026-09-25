@@ -30,7 +30,7 @@ const Projects = () => {
     ]
 
     return (
-        <section style={{backgroundColor: '#179b6c', padding: '10px'}}>
+        <section>
             <h2>Proyectos</h2>
             {proyectos.map((proyecto) => (
                 <ProjectCard 

@@ -4,7 +4,7 @@ const About = () => {
     const [verMas, setVerMas] = useState(false)
 
     return (
-        <section style={{ backgroundColor: "#5DADE2", padding: '10px'}}>
+        <section>
             <h2>Un poco sobre mí:</h2>
             <p>Soy Luciano, estudiante de la Tecnicatura Universitaria en Programación
             en la UTN (Facultad Regional Tucumán). Estudio programacion principalmente porque siempre quise saber
