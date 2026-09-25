@@ -1,16 +1,79 @@
-# React + Vite
+# TP1 — Mi portfolio en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Alumno:** Luciano Perondi
+**Materia:** Programación IV — Tecnicatura Universitaria en Programación, UTN FRT
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Portfolio personal de una sola página hecho con React y Vite. Presenta quién soy, mis habilidades y los proyectos que desarrollé durante la carrera.
 
-## React Compiler
+La interfaz está dividida en componentes que se comunican mediante props. Las secciones de habilidades y proyectos se generan a partir de arrays de datos con `map()`, y la sección "Sobre mí" tiene un botón "Ver más / Ver menos" que usa `useState` para mostrar u ocultar información extra.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript (JSX)
+- Bootstrap (solo los estilos CSS)
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Requisitos previos
+
+Tener instalados **Node.js** y **npm**.
+
+## Instalación
+
+Clonar el repositorio y entrar a la carpeta:
+
+```bash
+git clone https://github.com/lucho-bot/tp1-portfolio-perondi-luciano.git
+cd tp1-portfolio-perondi-luciano
+```
+
+Instalar las dependencias:
+
+```bash
+npm install
+```
+
+## Ejecución
+
+```bash
+npm run dev
+```
+
+Después abrir en el navegador la dirección que muestra la terminal, normalmente `http://localhost:5173`.
+
+## Estructura del proyecto
+
+```
+src/
+├── App.jsx              → componente raíz, arma la página
+├── App.css              → estilos propios (hover de las tarjetas)
+├── main.jsx             → punto de entrada, importa Bootstrap
+└── components/
+    ├── Header.jsx       → nombre y profesión (recibe props)
+    ├── Hero.jsx         → bienvenida
+    ├── About.jsx        → "Sobre mí" con Ver más / Ver menos
+    ├── Skills.jsx       → habilidades generadas con map()
+    ├── Projects.jsx     → lista de proyectos generada con map()
+    ├── ProjectCard.jsx  → tarjeta reutilizable de un proyecto (recibe props)
+    └── Footer.jsx       → contacto y copyright (recibe props)
+```
+
+## Conceptos de React aplicados
+
+| Concepto | Dónde |
+|---|---|
+| Componentes propios | Carpeta `src/components/` |
+| Props | `Header`, `Footer` y `ProjectCard` |
+| Array de datos | `Skills.jsx` y `Projects.jsx` |
+| `map()` con `key` | `Skills.jsx` (`key` = habilidad) y `Projects.jsx` (`key` = id del proyecto) |
+| Evento `onClick` | Botón de `About.jsx` |
+| `useState` | `About.jsx` |
+| Renderizado condicional | `About.jsx` (`&&` para el texto extra y ternario para el texto del botón) |
+| Responsive | Grilla de Bootstrap en `ProjectCard.jsx` (`col-md-6`) |
+
+## Repositorio
+
+https://github.com/lucho-bot/tp1-portfolio-perondi-luciano
